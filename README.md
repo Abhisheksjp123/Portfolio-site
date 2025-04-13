@@ -1,2 +1,2 @@
 # Portfolio-site
-For hosting a si gle page portfolio website on WWW
+For hosting a single page portfolio website on WWW

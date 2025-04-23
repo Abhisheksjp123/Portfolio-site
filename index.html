@@ -4,7 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Abhishek Shukla - Data Science Consultant</title>
+  <script>
+    window.onload = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+ // Scroll to the position of the top-bar
+};
+
+  </script>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <nav>
@@ -13,13 +22,40 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#recognizations">Recognizations</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <header class="hero">
-    <h1>Abhishek Shukla</h1>
-    <p>Data Science Consultant | CPG Retail Domain Expert | Python | Azure | PySpark | SQL</p>
-  </header>
+<!-- Top Green Box -->
+<div class="top-bar">
+<!-- Profile Section -->
+<div class="profile-container">
+  
+  <div class="profile-details">
+    <h2>Hello!
+      I am Abhishek Shukla</h2>
+    <h3>A passionate Data Science Consultant from Bengaluru, India</h3>
+    <p>B.Tech – Indian Institute of Technology (IIT) Roorkee</p>
+    <p><a href="mailto:ashukla@mt.iitr.ac.in">ashukla@mt.iitr.ac.in</a></p>
+    <small>*TLDR: Scroll through this page to know more about my journey or download the resume for shorter format </small>
+    <div class="social-buttons">
+      <a href="resume/Resume_Data_Science_Role.pdf" target="_blank" class="btn resume">
+        <img src="icons/resume.png" alt="Resume"> Resume
+      </a>
+      <a href="https://www.linkedin.com/in/ashukla10/" target="_blank" class="btn linkedin">
+        <img src="icons/linkedin-icon.png" alt="LinkedIn"> LinkedIn
+      </a>
+      <a href="https://github.com/Abhisheksjp123" target="_blank" class="btn github">
+        <img src="icons/github-icon.png" alt="GitHub"> GitHub
+      </a>
+    </div>
+  </div>
+  <div class="profile-image">
+    <img src="profile_pic.png" alt="Abhishek Shukla">
+  </div>
+</div>
+
+</div>
   <section id="about">
     <h2>About Me</h2>
     <p>Data Science Consultant with 4.5+ years of experience in delivering data-driven solutions across CPG and Retail
@@ -27,30 +63,70 @@ domains. Skilled in Python, PySpark, SQL, and Azure for building scalable machin
 data pipelines, and deriving insights from complex datasets. Proven expertise in pricing promotion analytics, MMM,
 and stakeholder engagement.</p>
     <p>Contact: <a href="tel:+918171330930">+91-8171330930</a> | <a href="mailto:ashukla@mt.iitr.ac.in">ashukla@mt.iitr.ac.in</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashukla10/" target="_blank">linkedin.com/in/ashukla10</a></p>
-    <p>GitHub: <a href="https://github.com/Abhisheksjp123" target="_blank">github.com/Abhisheksjp123</a></p>
-    <img src="profile_pic.png" />
   </section>
   <section id="experience">
     <h2>Experience</h2>
-    <h3>Fractal Bengaluru, India (Consultant)</h3>
+    <h3><u>Fractal Bengaluru, India (Consultant)</u></h3>
     <p>September 2020 – Present</p>
     <p><strong>Client: US Leading Petcare Company</strong></p>
+    <p><strong>Service: RGM/SRM</strong></p>
     <ul>
-      <li>Contributing to an ongoing Revenue Growth Management project, supporting the client with end-to-end insights on Pricing, Promotion, and Distribution strategies.</li>
-      <li>Developed a Bayesian Regression model with 40+ features for predictive analytics.</li>
-      <li>Built data pipelines and automated regular data refreshes using Azure Databricks.</li>
-      <li>Leading the Demand and Forecast vertical in a client-facing role.</li>
+      <li>This RGM Project required us to provide end to end value insights and support to client regarding Pricing,
+      Promotion, Distribution and overall how they affect the revenue. We developed and maintained over 60
+      Reports and Simulators on Power-BI, Excel and React to be utilized everyday by client. We used Nielsen
+      POS data, Internal financial data and our model outputs for that.</li>
+      <li>We had a robust Pricing and Promotion Bayesian Regression model for predictive analytics. Ranging over
+      2.5 years with this client, Feature engineered various modelling variables like Media Variables and Panel
+      data(House hold penetration) into the model and was responsible for Model Validation.</li>
+      <li>Developed logic and Coded several analytics reports including NPOD, Price index Traffic light, Elasticity
+      tool, waterfall tool, length and frequency , Next best action tool to name a few. Leveraged Pyspark to
+      handle weekly Big Data of over thousands of SKUs/UPCs and around 250 PPGs.</li>
+      <li>Created Pipelines and Triggers on Azure DataBricks for regular refreshes to incorporate latest data. Lever-
+      aged Databricks for version control and data quality control.</li>
+      <li>Utilised SQL/SSMS to create and manage Relational data for Demand and forecast handling of over 23
+      retailers incl. Walmart. Collaborated with Full stack developers to implement authentication base React
+      APIs to real time track actualized demand and new forecast numbers happening periodically.</li>
+      <li>As a consultant, understood client problem statements and led a team of 3-Data engineers to handle every-
+      day ad-hoc analytical requirements. Led team of Power Bi Analysts to create Dashboards and Volunteered
+      to emulate US Power bi Dashboards for Canada market POC which eventually led to Full scale billed project
+      .Helped client realize value of over 270 Million Dollars over 2023-24.</li>
     </ul>
-    <h3>SpeedLabs Indore, MP, India (Machine Learning Intern)</h3>
+    <p><strong>Client: US-Europe Spices and Condiments Comapany</strong></p>
+    <p><strong>Service: Marketing Media Modelling(MMM)</strong></p>
+    <ul>
+      <li>Created a full scale MMM Project which focuses exclusively on Media promotions like Facebook/Instagram
+      ads, Google Search, Newpapers ads, Hoardings etc. Utilized Excel full potential incl. Visual Basics(VBA) to
+      created Bayesian model over Excel for client understanding.</li>
+      <li>Feature engineered important media attributes like Video promotion length(5 sec/ 1 min etc), influencer
+      flag to test their efficacy on a marketing campaign. Utilised statistical tools to curate variables with high
+      correlation with revenue and bring variance to the equation.</li>
+      <li>Simulated spends vs ROI for several planned media campaigns. Suggesting ideal budget in accordance with
+      saturation curve for maximum potential Profit ROI over assigned budget.</li>
+    </ul>
+    <p><strong>Client: Prominent Hygiene and Homes CPG Company for Australian Market</strong></p>
+    <p><strong>Service: Pricing and Promotion Modelling</strong></p>
+    <ul>
+      <li>Pricing and Promotion models focus on everyday TPR (temporary price reduction), Display, Feature promotions, and ACV distribution run by Manufacturer-Retailer for a product.</li>
+      <li>Developed ElasticNet regression model (combination of Ridge + Lasso regression) for improved model fit and explainability. Created Due-tos waterfall to explain base sales and Promotion uplifts.</li>
+      <li>Provided advanced analytics like price change suggestions with respect to product elasticity, self-competition product cannibalization, and price ladder-price gap to reduce it.</li>
+      <li>Created dashboards for price tracking, opportunity identification, promotional ROIs, retailer margins, and manufacturer margins.</li>
+    </ul>
+    <h3><u>SpeedLabs Indore, MP, India (Machine Learning Intern)</u></h3>
     <p>May 2019 – June 2019</p>
     <ul>
-      <li>Contributed to AI-based EdTech tools and improved UI/UX feedback.</li>
+      <li>SpeedLabs is an AI-based online lecture and practice platform focusing on Competitive exams like engineering and medical entrances like IIT JEE and NEET etc.</li>
+      <li>Helped curate new tools for the platform. Reviewed and corrected errors on the platform’s content.</li>
+      <li>Developed content targeted to JEE exam. Proposed feedback regarding the platform structure, user interface, user experience.</li>
+      <li>Visited Schools, Pitching them about what AI-tool has to offer, and how it can help students to crack their dream colleges.</li>
     </ul>
-    <h3>Ultratech Cements Tadipatri, AP, India (Research Intern)</h3>
+    <h3><u>Ultratech Cements Tadipatri, AP, India (Research Intern)</u></h3>
     <p>May 2018 – June 2018</p>
     <ul>
       <li>Conducted experimental testing to analyze cement strength and consistency.</li>
+      <li>Effect on strength, durability, and consistency of cement examined vs varied particle sizes/Blaine number.</li>
+      <li>Performed Autoclave test, Le-Chatelier test, strength test, and Blaine number analysis to determine particular Blaine performance.</li>
+      <li>Results were tabulated and examined on an Excel database, with various analytical charts to explain the output.</li>
+      <li>Results showed 300m²/kg and 350m²/kg Blaine number respectively for OPC and PPC as a higher end for hardness with optimal costing.</li>
     </ul>
   </section>
   <section id="skills">
@@ -74,14 +150,26 @@ and stakeholder engagement.</p>
       <li>Microsoft Certified: PL-300 Data Analyst Associate</li>
       <li>Microsoft Certified: DP-900 Azure Data Fundamentals</li>
       <li>NSE NCFM – Investment Analysis & Portfolio Management</li>
+      <li>Fractal Certified: SQL Developer | PySpark Developer Associate | Decision Scientist</li>
     </ul>
   </section>
   <section id="projects">
     <h2>Projects and Publications</h2>
     <h3>Automated Mediator Power Socket, MARS, IIT Roorkee</h3>
-    <p>Built a portable home automation device using Node-MCU and relay modules. Presented at SHRISHTI’18, IIT Roorkee.</p>
+    <p>Created a portable home automation device that plugs between a power socket and cord, enabling control via
+      a smartphone app. The product, built using Node-MCU and a relay module, offers a cost-effective and portable
+      alternative for turning devices on/off and setting timers. Presented at SHRISHTI’18, IIT Roorkee</p>
     <h3>Youtube Parser Scraper</h3>
-    <p>Developed a Python-based scraper using Selenium and BeautifulSoup to extract video metadata.</p>
+    <p>Developed a Python-based scraper using Selenium and BeautifulSoup to extract video metadata, including titles, descriptions, and tags. Incorporated Natural Language Processing (NLP) techniques to analyze and summarize video descriptions for better insights.</p>
+  </section>  
+  <section id="recognizations">
+    <h2>Awards and Recognizations</h2>
+    <ul>
+      <li>Fractal’s Top 20 | Fractal.ai</li>
+      <li>Star award - Kaizen | Fractal.ai</li>
+      <li>3rd Position in FSL Chess tournament | Fractal.ai</li>
+      <li>AIR 4805 | IIT-JEE</li>
+    </ul>
   </section>
   <section id="contact">
     <h2>Contact</h2>

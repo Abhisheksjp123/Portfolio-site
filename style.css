@@ -1,14 +1,14 @@
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #fdf6e3; /* beige */
+  background-color: #fdf6e3; /* Beige */
   color: #2e2e2e;
 }
 
-
+/* Navigation Bar */
 nav {
-  background-color: #b2d8b2; /* pastel green */
+  background-color: #b2d8b2; /* Pastel green */
   padding: 1px;
   position: sticky;
   top: 0;
@@ -32,12 +32,10 @@ nav a {
   font-weight: bold;
 }
 
-/* Green Top Bar */
+/* Top Bar */
 .top-bar {
-  /*background-image: url('background/top_bar.png');*/
-background-color: #b2d8b2;
+  background-color: #b2d8b2; /* Pastel green */
 }
-
 
 .top-bar h1 {
   color: white;
@@ -53,16 +51,17 @@ background-color: #b2d8b2;
   margin-top: 30px;
   padding: 20px;
 }
+
 .profile-image {
   width: 300px;
   height: 300px;
-  border-radius: 50%;       /* Makes it circular */
+  border-radius: 50%; /* Circular shape */
   overflow: hidden;
-  border: 4px solid #fff;   /* White border */
+  border: 4px solid #fff; /* White border */
   margin-right: 20px;
-  object-fit: contain ; /* Ensures the image fits within the circle */
+  object-fit: contain; /* Ensures the image fits within the circle */
   background-color: #f0f0f0; /* Light gray background */
-  object-position: center 20%; /* Shows more of the top part (like your hair!) */
+  object-position: center 20%; /* Focus on the top part */
 }
 
 .profile-image img {
@@ -73,8 +72,8 @@ background-color: #b2d8b2;
 
 .profile-details {
   max-width: 400px;
-  text-align: left; /* Left align text */
-  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  text-align: left; /* Left-align text */
+  font-family: 'Poppins', sans-serif; /* Poppins font */
 }
 
 .profile-details h2 {
@@ -96,6 +95,8 @@ background-color: #b2d8b2;
 .profile-details a:hover {
   text-decoration: underline;
 }
+
+/* Social Buttons */
 .social-buttons {
   margin-top: 20px;
   display: flex;
@@ -112,7 +113,7 @@ background-color: #b2d8b2;
   border-radius: 30px;
   transition: background-color 0.3s ease;
   font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn img {
@@ -120,18 +121,19 @@ background-color: #b2d8b2;
   height: 20px;
   margin-right: 10px;
 }
+
 .btn.resume {
-  background-color: #77DD77;
+  background-color: #77DD77; /* Green */
   color: white;
 }
 
 .btn.linkedin {
-  background-color: #0077B5;
+  background-color: #0077B5; /* LinkedIn blue */
   color: white;
 }
 
 .btn.github {
-  background-color: #333;
+  background-color: #333; /* GitHub black */
   color: white;
 }
 
@@ -139,6 +141,7 @@ background-color: #b2d8b2;
   opacity: 0.85;
 }
 
+/* Section Styles */
 section {
   padding: 30px 20px;
   max-width: 800px;
@@ -152,11 +155,72 @@ section img {
   height: auto;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #b2d8b2;
+  background-color: #b2d8b2; /* Pastel green */
   font-size: 0.9em;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 4px 0; /* Less vertical space */
+  }
+  /* Profile Section */
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-details {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* Navigation Bar */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+  }
+
+  nav li {
+    margin: 0 5px; /* Slightly tighter spacing */
+  }
+  .top-heading {
+    font-size: 1.6em; /* Smaller heading on top bar */
+  }
+
+  /* Social Buttons */
+  .social-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    justify-content: center;
+    width: 80%;
+  }
+
+  /* Top Bar */
+  .top-bar h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Section */
+  section {
+    padding: 20px 10px;
+  }
+}
